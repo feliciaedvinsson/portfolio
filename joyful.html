@@ -5,13 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Portfolio">
       <meta name="author" content="Felicia Edvinsson">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
       <link rel="stylesheet" href="CSS-Reset.css">
+      <link rel="stylesheet" href="style.css">
+      <!-- Typsnitt -->
+      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
+      <!-- Nedåtpil animation index -->
+      <link rel="stylesheet" href="https://lottie.host/0f401541-98c4-42aa-a922-295caa284f02/uoAU5xPSYv.lottie">
       <title>Portfolio</title>
+      <!-- Ljust läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+      <!-- Mörkt läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
    </head>
    <body onload=loadContent()>
       <div class="cursor"></div>
+      <!-- header börjar här -->
       <header class="full-height">
          <div class="headerqnt">
             <div class="bluesqr">
@@ -26,15 +34,19 @@
             <h1 class="main-title">PORTFOLIO</h1>
             <div class="bluedot"></div>
          </div>
+         <!--Navigation börjar här -->
          <nav>
             <ul>
-               <li class="hideOnMobile"><a class="hoverlink" href="index.html">HEM</a></li>
-               <li class="hideOnMobile"><a class="current" href="Projekt.html">PROJEKT</a></li>
-               <li class="hideOnMobile"><a class="hoverlink" href="om-mig.html" onclick=hideHeader()>OM MIG</a></li>
-               <li class="hideOnMobile"><a class="hoverlink" href="kontakt.html" onclick=loadContent()>KONTAKT</a></li>
+               <li><a class="hoverlink" href="index.html">HEM</a></li>
+               <li><a class="current" href="Projekt.html">PROJEKT</a></li>
+               <li><a class="hoverlink" href="om-mig.html" onclick=hideHeader()>OM MIG</a></li>
+               <li><a class="hoverlink" href="kontakt.html" onclick=loadContent()>KONTAKT</a></li>
             </ul>
          </nav>
+         <!--Navigation slutar här -->
+         <!--Header slutar här -->
       </header>
+      <!-- Huvudinnehåll börjar här -->
       <main>
          <div class="dark joyful-dark">
             <div class="content-wrapper joyful-card-container color-white">
@@ -56,24 +68,24 @@
                <div class="joyful-card-item">
                   <h3>BAKGRUND & MÅL</h3>
                   <p>Syftet med Joyful var att erbjuda ett alternativ till meningslöst scrollande och hjälpa användare ta kontroll över sin skärmtid. Appen skulle både ge förslag på alternativa aktiviteter, såsom meditation, träning eller hjälp att somna, och låta användaren sätta tydliga begränsningar för sin mobilanvändning.</p>
-                    <p>En central funktion var att användaren inte kunde ändra sina begränsningar förrän nästa dag, vilket skulle minska risken för att enkelt kringgå inställningarna, något som idag är möjligt med många befintliga system.</p>
+                  <p>En central funktion var att användaren inte kunde ändra sina begränsningar förrän nästa dag, vilket skulle minska risken för att enkelt kringgå inställningarna, något som idag är möjligt med många befintliga system.</p>
                </div>
             </div>
             <div class="color-black content-wrapper joyful-card-container">
-                <div class="joyful-card-item">
-                   <img class="joyful-method" src="images/charts-02.png" alt="Urval av enkätsvar">
-                </div>
-                <div class="joyful-card-item">
-                   <h3>METOD & PROCESS</h3>
-                   <p>Projektet inleddes med att jag använde olika kreativa metoder för att kartlägga människors guilty pleasures och identifiera smärtpunkter. Detta inkluderade bland annat:
-                    <ul>
-                        <li>Enkäter och intervjuer: För att samla in både bredd och djup i människors tankar och känslor kring sitt mobilanvändande.</li>
-                        <li>Workshops och anonyma lappar: En mer spelifierad och avspänd approach för att få deltagarna att öppna upp.</li>
-                        <li>Kvalitativ enkät: Efter att ha valt fokus på skärmtid skickade jag ut en mer riktad enkät som fick 22 svar. Diagrammen visar utdrag från denna enkät.</li>
-                    </ul>
-                    <p>Med insikterna från dessa metoder skapade jag en storyboard för att formulera en generell persona och få en tydligare bild av användarnas behov. Jag tog fram analoga skisser, en färgkarta, valde typsnitt, skapade ett flödesschema och designade wireframes innan jag började utveckla den slutgiltiga prototypen.</p>
-                </div>
-             </div>
+               <div class="joyful-card-item">
+                  <img class="joyful-method" src="images/charts-02.png" alt="Urval av enkätsvar">
+               </div>
+               <div class="joyful-card-item">
+                  <h3>METOD & PROCESS</h3>
+                  <p>Projektet inleddes med att jag använde olika kreativa metoder för att kartlägga människors guilty pleasures och identifiera smärtpunkter. Detta inkluderade bland annat:
+                  <ul>
+                     <li>Enkäter och intervjuer: För att samla in både bredd och djup i människors tankar och känslor kring sitt mobilanvändande.</li>
+                     <li>Workshops och anonyma lappar: En mer spelifierad och avspänd approach för att få deltagarna att öppna upp.</li>
+                     <li>Kvalitativ enkät: Efter att ha valt fokus på skärmtid skickade jag ut en mer riktad enkät som fick 22 svar. Diagrammen visar utdrag från denna enkät.</li>
+                  </ul>
+                  <p>Med insikterna från dessa metoder skapade jag en storyboard för att formulera en generell persona och få en tydligare bild av användarnas behov. Jag tog fram analoga skisser, en färgkarta, valde typsnitt, skapade ett flödesschema och designade wireframes innan jag började utveckla den slutgiltiga prototypen.</p>
+               </div>
+            </div>
          </div>
          <div class="dark joyful-dark-2">
             <div class="content-wrapper joyful-card-container color-white">
@@ -84,15 +96,17 @@
                   <p>Som ett skolarbete var projektet begränsat i tid och resurser, vilket gjorde att vissa delar av designen inte nådde sin fulla potential. Exempelvis använde jag ikoner från externa källor som svgrepo.com och fontawesome.com, men hade gärna designat egna för att skapa en mer unik identitet. Trots detta visar feedback från användartester att prototypen fyller en funktion och upplevs som både användbar och inspirerande.</p>
                   <h3>SAMMANFATTNING</h3>
                   <p>Joyful är ett projekt som visar min förmåga att kombinera användarcentrerad research och design för att adressera verkliga problem. Det gav mig en djupare förståelse för användarnas känslor och behov samt värdefull erfarenhet av att designa för beteendeförändring. Projektet har också inspirerat mig att fortsätta utforska hur design kan skapa positiva effekter i människors liv.
-                    Vill du veta mer om Joyful eller diskutera liknande projekt? <br> Tveka inte att höra av dig!
-                    </p>
-                </div>
+                     Vill du veta mer om Joyful eller diskutera liknande projekt? <br> Tveka inte att höra av dig!
+                  </p>
+               </div>
                <div class="joyful-card-item">
                   <img class="joyful-mock-2" src="images/joyful-mocks.webp" alt="Mockup av två mobiltelefoner med gränssnittet för joyful">
                </div>
             </div>
          </div>
       </main>
+      <!-- Huvudinnehåll slutar här -->
+      <!-- Footer börjar här -->
       <footer onmouseenter="hoverColor()" onmouseleave="hoverOutColor()">
          <div class="container">
             <div class="box">
@@ -118,11 +132,18 @@
                </div>
             </div>
          </div>
-         <div class="copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
+         <!-- Copyright ikon: Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+         <div class="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+               <path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/>
+            </svg>
             <p>Designad och kodad av Felicia Edvinsson</p>
-        </div>
+         </div>
          <div class="footerlogo"><img src="images/vitlogo.png" alt="Logotype"></div>
       </footer>
-      <script src="script.js" defer></script>
+      <!-- footer slutar här -->
+      <!--Script börjar här -->
+      <script src="script.js"></script>
+      <!-- Script slutar här -->
    </body>
 </html>

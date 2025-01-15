@@ -1,738 +1,851 @@
-*{
-    margin: 0px;
-    padding: 0;
-    font-family: "bryant-web", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    cursor: none;
+* {
+	margin: 0px;
+	padding: 0;
+	font-family: "bryant-web", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	cursor: none;
 }
-*, html {
-        scroll-behavior: smooth !important;
-      }
-.setcursor:hover{
-    cursor:auto;
+
+*,
+html {
+	scroll-behavior: smooth !important;
 }
-.non-cursor :hover{
-    cursor: none;
+
+.setcursor:hover {
+	cursor: auto;
 }
+
+.non-cursor :hover {
+	cursor: none;
+}
+
 /*allmänna regler...............................................*/
 /*position*/
-.center-text{
-    text-align:center;
+.center-text {
+	text-align: center;
 }
-.row-content{
-    display: flex;
-    width: auto;
+
+.row-content {
+	display: flex;
+	width: auto;
 }
+
 /*färger*/
-.color-white{
-color: white;
+.color-white {
+	color: white;
 }
-.color-black{
-    color: black;
+
+.color-black {
+	color: black;
 }
-.color-blue{
-    color:#0045BC;
+
+.color-blue {
+	color: #0045BC;
 }
-.dark{
-    margin-top: 0px;
-    background-color: #272722;
+
+.dark {
+	margin-top: 0px;
+	background-color: #272722;
 }
-.light{
-    background-color: #FCFCF2;
+
+.light {
+	background-color: #FCFCF2;
 }
+
 /*färger slutar här*/
 /*allmänna regler slutar här....................................*/
 
 /*inställningar för muspekare...................................*/
-.hidecrs:hover{
-    cursor: none;
+.hidecrs:hover {
+	cursor: none;
 }
 
-.cursor{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #0045BC;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    z-index: 1000;
+.cursor {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #0045BC;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	z-index: 1000;
 }
+
 /*inställningar för muspekare slutar här........................*/
 
 /*inställningar för text........................................*/
 h1 {
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 10vw;
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 10vw;
 }
-h2 {
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 60px;
- }
 
-h3{
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 30px;
-} 
+h2 {
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+}
+
+h3 {
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+}
+
 p {
-    font-size: 22px;
+	font-size: 22px;
 }
-.page-title{
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    font-size: 4vw;
+
+.page-title {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	font-size: 4vw;
 }
-.card-title{
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    font-size: 4vw;
+
+.card-title {
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	font-size: 4vw;
 }
-.card-desc{
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-left: 10px;
+
+.card-desc {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+	padding-left: 10px;
 }
+
 /*inställningar för text slutar här.............................*/
 
 /*inställningar för HEADER börjar här...........................*/
 /*inställningar för background i header*/
-.full-height{
-    background-color: #FCFCF2;
-    height: 100vh;
+.full-height {
+	background-color: #FCFCF2;
+	height: 100vh;
 }
-.full-height-expand{
-    background-color: #FCFCF2;
-    height: 0vh;
+
+.full-height-expand {
+	background-color: #FCFCF2;
+	height: 0vh;
 }
+
 .bluesqr {
-    width: 19vw;
-    max-height: 25vw;
-    background-color: #0045BC;
-    margin-left: 10vw;
+	width: 19vw;
+	max-height: 25vw;
+	background-color: #0045BC;
+	margin-left: 10vw;
 }
-header img{
-    height: 15vw;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 30%;
+
+header img {
+	height: 15vw;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 30%;
 }
+
 /*inställningar för background i header slutar här*/
 /*inställningar för texten portfolio*/
-.main-title{
-    text-align:left;
-    margin-left: 4vw;
-    padding-top: 6%;
+.main-title {
+	text-align: left;
+	margin-left: 4vw;
+	padding-top: 6%;
 }
-.title-remove{
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 120px;
+
+.title-remove {
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 120px;
 }
-.bluedot{
-    height: 1.5vw;
-    width: 1.5vw;
-    border-radius: 50%;
-    background-color: #0045BC;
-    display: inline-block;
-    align-self: flex-end;
-    margin-bottom: 2.2%;
+
+.bluedot {
+	height: 1.5vw;
+	width: 1.5vw;
+	border-radius: 50%;
+	background-color: #0045BC;
+	display: inline-block;
+	align-self: flex-end;
+	margin-bottom: 2.2%;
 }
+
 /*inställningar för texten portfolio slutar här*/
 /*inställningar för start text på index*/
-.start-text{
-    text-align:right;
-    margin-right: 180px;
-    margin-top: 15vh;
+.start-text {
+	text-align: right;
+	margin-right: 180px;
+	margin-top: 15vh;
 }
-.start-text-expand{
-    font-size: 0px;
-    text-align:right;
-    margin-right: 8vw;
-    margin-top: 0vh;
-    width: auto;
+
+.start-text-expand {
+	font-size: 0px;
+	text-align: right;
+	margin-right: 8vw;
+	margin-top: 0vh;
+	width: auto;
 }
+
 .title-expand {
-    font-size: 0px;
-    text-align:center;
-    opacity: 0%;
+	font-size: 0px;
+	text-align: center;
+	opacity: 0%;
 }
+
 .p-expand {
-    font-size: 0px;
-    opacity: 0%
+	font-size: 0px;
+	opacity: 0%
 }
+
 /*inställningar för start text på index slutar här*/
 
 .headerqnt {
-    display: flex;
-    justify-content: space-between;
-    height: 50vh;
+	display: flex;
+	justify-content: space-between;
+	height: 50vh;
 }
+
 .headerqnt-expand {
-    display: flex;
-    justify-content: space-between;
-    height: 0vh;
+	display: flex;
+	justify-content: space-between;
+	height: 0vh;
 }
-.index-arrow{
-    margin: 0 auto;
-    height: 7vw;
-    width: 7vw;
+
+.index-arrow {
+	margin: 0 auto;
+	height: 7vw;
+	width: 7vw;
 }
+
 /*inställningar för HEADER Slutar här..........................*/
 
 
 /* Inställningar för NAVIGATION börjar här.....................*/
-  nav{
-    margin-left: 4vw;
-  }
-  nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    font-size: 2vw;
-    padding-left: 0.5vw;
-  }
-  nav li{
-    height: 50px;
-    margin-right: 5%;
+nav {
+	margin-left: 4vw;
 }
-nav a{
-    display: inline-block;
-    height: 100%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-    position: relative;
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	font-size: 2vw;
+	padding-left: 0.5vw;
 }
-.hoverlink:hover{
-    cursor: none;
+
+nav li {
+	height: 50px;
+	margin-right: 5%;
 }
-.hoverlink::after{
-    content: "";
-    position: absolute;
-    width: 0%;
-    bottom: 5px;
-    height: 3px;
-    left: 50%;
-    background: #0045BC;
-    transition: all 400ms ease-out;
+
+nav a {
+	display: inline-block;
+	height: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+	position: relative;
 }
-.hoverlink:hover:after{
-    width: 100%;
-    left: 0;
+
+.hoverlink:hover {
+	cursor: none;
 }
-.current::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 5px;
-    height: 3px;
-    left: 0;
-    background: #0045BC;
+
+.hoverlink::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	bottom: 5px;
+	height: 3px;
+	left: 50%;
+	background: #0045BC;
+	transition: all 400ms ease-out;
+}
+
+.hoverlink:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.current::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	height: 3px;
+	left: 0;
+	background: #0045BC;
 }
 
 /* Inställningar för NAVIGATION slutar här.....................*/
 
 /*Inställningar för Main Index börjar här...........................*/
-.index-arrow:hover{
-    fill: #0045BC;
+.index-arrow:hover {
+	fill: #0045BC;
 }
+
 .maincont-index {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.start-dark{
-    height: 50vw; 
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
-.start-light{
-    height: 50vw;
+.start-dark {
+	height: 50vw;
 }
+
+.start-light {
+	height: 50vw;
+}
+
 /*bilder börjar här*/
-.index-img-container{
-    width: 75%;
-    height: 80%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.column{
-    display: flex;
-    flex-direction: column;
-    width: 49%;
-    justify-content: space-between;
-}
-.espresso{
-    width: auto;
-    height: auto;
+.index-img-container {
+	width: 75%;
+	height: 80%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.designguide{
-    width: auto;
-    height: auto;
-}
-.interface{
-    width: auto;
-    height: auto;
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+	justify-content: space-between;
 }
 
-.poster{
-    width: auto;
-    height: auto;
+.espresso {
+	width: auto;
+	height: auto;
+}
+
+.designguide {
+	width: auto;
+	height: auto;
+}
+
+.interface {
+	width: auto;
+	height: auto;
+}
+
+.poster {
+	width: auto;
+	height: auto;
 }
 
 /*bilder slutar här*/
 /*banner se mer projekt börjar här*/
-.seprojekt{
-    font-size: 4vw;
-    text-decoration: none;
-    color: black;  
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900; 
+.seprojekt {
+	font-size: 4vw;
+	text-decoration: none;
+	color: black;
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
 }
 
-.bluearrow{
-    height: 5vw;
-    padding-top: 20px;
+.bluearrow {
+	height: 5vw;
+	padding-top: 20px;
 }
 
-.bluearrow :hover{
-    fill: black;
+.bluearrow :hover {
+	fill: black;
 }
+
 /*banner se mer projekt slutar här*/
 /*Inställningar för Main Index slutar här...........................*/
 
 /*Inställningar för PROJEKT börjar här..............................*/
-.content-wrapper{
-    max-width: 1400px;
-    margin: 0 auto;
-    height: auto;
-    padding: 0px 5px 40px 5px;
+.content-wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	height: auto;
+	padding: 0px 5px 40px 5px;
 }
-.project-dark-1{
-    height: auto;
+
+.project-dark-1 {
+	height: auto;
 }
-.project-dark-2{
-    height: auto;
+
+.project-dark-2 {
+	height: auto;
 }
-.project-light{
-    height: auto;
+
+.project-light {
+	height: auto;
 }
+
 /*Inställningar för bilder börjar här..............................*/
-.img-left{
-    width: 100%;
-    height: auto;
+.img-left {
+	width: 100%;
+	height: auto;
 }
 
-.img-right{
-    width: 100%;
-    height: auto;
+.img-right {
+	width: 100%;
+	height: auto;
 }
-.image-hover{
-    -webkit-filter: brightness(100%);
+
+.image-hover {
+	-webkit-filter: brightness(100%);
 }
+
 .image-hover:hover {
-    -webkit-filter: brightness(60%);
-    transform: scale(1.01);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+	-webkit-filter: brightness(60%);
+	transform: scale(1.01);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
+
 .card-container {
-    max-width: 1400px;
-    display: flex;
-    gap: 5%;
-    margin: 0 auto;
-    padding-bottom: 50px;
+	max-width: 1400px;
+	display: flex;
+	gap: 5%;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
+
 .project-card {
-    width: 48%;
-    display: flex;  
-    flex-direction: column;
+	width: 48%;
+	display: flex;
+	flex-direction: column;
 }
+
 .card-text {
-    display: flex;
-    max-width: 600px;
+	display: flex;
+	max-width: 600px;
 }
+
 .number {
-    font-size: 100px;
+	font-size: 100px;
 }
-/*inställningat för projekt slutar här*/
+
+/*inställningat för projekt slutar här...........................*/
 /*inställningar för casestudy joyful........................................*/
-.joyful-dark{
-    height: auto;
+.joyful-dark {
+	height: auto;
 }
-.joyful-light{
-    height: auto;
+
+.joyful-light {
+	height: auto;
 }
-.joyful-dark-2{
-    height: auto;
+
+.joyful-dark-2 {
+	height: auto;
 }
-.joyful-mock{
-    height: 500px;
+
+.joyful-mock {
+	height: 500px;
 }
-.joyful-mock-2{
-    height: 500px;
-    margin-top: 200px;
-    padding-left: 20px;
+
+.joyful-mock-2 {
+	height: 500px;
+	margin-top: 200px;
+	padding-left: 20px;
 }
-.joyful-method{
-    height: 550px;
-    padding-top: 40px;
+
+.joyful-method {
+	height: 550px;
+	padding-top: 40px;
 }
-.joyful-card-container{
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-between;
-    gap: 40px;
+
+.joyful-card-container {
+	display: flex;
+	padding-top: 40px;
+	justify-content: space-between;
+	gap: 40px;
 }
-.joyful-card-item{
-    width: 650px;
-    padding-bottom: 40px;
+
+.joyful-card-item {
+	width: 650px;
+	padding-bottom: 40px;
 }
-.joyful-card-item h3, .joyful-card-item p{
-    padding-top: 40px;
+
+.joyful-card-item h3,
+.joyful-card-item p {
+	padding-top: 40px;
 }
-.joyful-card-item li{
-    list-style-position: inside;
-    font-size: 22px;
-    padding-top: 40px;
+
+.joyful-card-item li {
+	list-style-position: inside;
+	font-size: 22px;
+	padding-top: 40px;
 }
-/*inställningat för joyful slutar här*/
+
+/*inställningat för joyful slutar här...........................*/
 /*inställningar för om mig........................................*/
-.om-mig-bg{
-    background-image: url(./images/om-mig-bakgrund.jpg);
-    background-repeat: no-repeat;
-    background-size: auto 1830px;
-    background-color: #FCFCF2;
-}
-.about-title{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-size: 60px;
-}
-.about-me-card{
-    padding-left: 20px;
-}
-.me{
-    height: 650px;
+.om-mig-bg {
+	background-image: url(./images/om-mig-bakgrund.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 1830px;
+	background-color: #FCFCF2;
 }
 
-.crochet{
-    height: 430px;
-    right: 250px;
+.about-title {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-size: 60px;
 }
 
-.about-me{
- margin-top: 120px;
- padding: 80px 20px 20px 20px;
+.about-me-card {
+	padding-left: 20px;
 }
 
-.about-me p{
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding-right: 70px;
-    line-height: 1.3;
+.me {
+	height: 650px;
 }
 
-.intro-name{
-    padding-top: 40px;
+.crochet {
+	height: 430px;
+	right: 250px;
+}
+
+.about-me {
+	margin-top: 120px;
+	padding: 80px 20px 20px 20px;
+}
+
+.about-me p {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-right: 70px;
+	line-height: 1.3;
+}
+
+.intro-name {
+	padding-top: 40px;
 
 }
-.hobby-container{
-    max-width: 1400px;
-    display: flex;
-    gap: 5%;
-    margin: 0 auto;
-    padding: 20px 20px 50px 20px;
+
+.hobby-container {
+	max-width: 1400px;
+	display: flex;
+	gap: 5%;
+	margin: 0 auto;
+	padding: 20px 20px 50px 20px;
 }
-.hobby-card{
-    padding: 0px 20px 0px 20px;
+
+.hobby-card {
+	padding: 0px 20px 0px 20px;
 }
+
 .hobby-card p {
-    padding-top: 20px;
-    line-height: 1.3;
+	padding-top: 20px;
+	line-height: 1.3;
 }
-.hobby{
-    margin-top: 0px;
+
+.hobby {
+	margin-top: 0px;
 }
-/*inställningat för om mig slutar här*/
+
+/*inställningat för om mig slutar här...........................*/
 /*inställningar för casestudy joyful........................................*/
 /*kontaktformulär*/
-.card-item{
-    width: 580px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    row-gap: 20px;
-}
-.card-item input{
-    border-radius: 5px;
-    width: 100%;
-}
-.card{
-    padding: 20px;
-    display: flex;
-    margin: 0 auto;
-    width: auto;
-    justify-content: center;
-}
-.right{
-    float: right;
+.card-item {
+	width: 580px;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	row-gap: 20px;
 }
 
-.contact-form{
-    margin-top: 80px;
-    padding: 10px 10px 10px 10px;
-}
-.kontaktrubrik{
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 1160px;
-    font-size: 35px;
-    text-align: left;
+.card-item input {
+	border-radius: 5px;
+	width: 100%;
 }
 
-.btn{
-    width: 120px;
-    margin-top: 50px;
-    font-size: 35px;
-}
-.btn input{
-    float: right;
-}
-
-.container-kontakt{
-    padding: 10px 0px 10px 0px;
+.card {
+	padding: 20px;
+	display: flex;
+	margin: 0 auto;
+	width: auto;
+	justify-content: center;
 }
 
-label{
-    color: white;
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    letter-spacing: 0.5px;
+.right {
+	float: right;
+}
+
+.contact-form {
+	margin-top: 80px;
+	padding: 10px 10px 10px 10px;
+}
+
+.kontaktrubrik {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 1160px;
+	font-size: 35px;
+	text-align: left;
+}
+
+.btn {
+	width: 120px;
+	margin-top: 50px;
+	font-size: 35px;
+}
+
+.btn input {
+	float: right;
+}
+
+.container-kontakt {
+	padding: 10px 0px 10px 0px;
+}
+
+label {
+	color: white;
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	letter-spacing: 0.5px;
 }
 
 
-input[type=text], select, textarea {
-    width: 500px;
-    font-size: 18px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical /* Expanderar textrutan vertikalt istället för horisontellt*/  
-}
-  
-  input[type=submit] {
-    background-color:#0045BC;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-  }
-  
-  input[type=submit]:hover {
-    background-color:#072e71;
-  }
-
-  .contact-dark{
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .bottom-banner{
-    height:20vw;
+input[type=text],
+select,
+textarea {
+	width: 500px;
+	font-size: 18px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
 }
 
-  .contact-text{
-    padding-top: 90px;
+input[type=submit] {
+	background-color: #0045BC;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 18px;
 }
-.contact-mail{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+
+input[type=submit]:hover {
+	background-color: #072e71;
 }
-.contact-mail img{
-    margin-right: 15px;
-    height: 25px;
+
+.contact-dark {
+	height: auto;
+	padding-bottom: 50px;
 }
-.contact-mail p{
-    font-size: 20px;
+
+.bottom-banner {
+	height: 20vw;
 }
-/*inställningat för kontakt slutar här*/
+
+.contact-text {
+	padding-top: 90px;
+}
+
+.contact-mail {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.contact-mail img {
+	margin-right: 15px;
+	height: 25px;
+}
+
+.contact-mail p {
+	font-size: 20px;
+}
+
+/*inställningat för kontakt slutar här...........................*/
 /*inställningar för footer........................................*/
 
-footer{
-    background-color: #0045BC;
-    color: white;
-    height: auto;
-    overflow: hidden;
-    position: relative;
+footer {
+	background-color: #0045BC;
+	color: white;
+	height: auto;
+	overflow: hidden;
+	position: relative;
 }
 
-footer .container{
-    margin-bottom: 90px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 10px;
+footer .container {
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	padding: 10px;
 }
 
-footer .box{
-    margin-top: 10vh;
-    width: 325px;
+footer .box {
+	margin-top: 10vh;
+	width: 325px;
 }
 
-footer h3{
-    font-family: "museo-sans", sans-serif;
-    font-weight: 900;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-footer ul{
-    width: 100%;
-    font-size: 30px;
+footer h3 {
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
 
-footer li{
-    list-style: none;
+footer ul {
+	width: 100%;
+	font-size: 30px;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+footer li {
+	list-style: none;
 }
 
-.socials{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
+footer a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
 }
+
+.socials {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+}
+
 .socials img {
-    width: 30px;
+	width: 30px;
 }
 
-footer .contact{
-   display: flex;
-   font-size: 20px;
+footer .contact {
+	display: flex;
+	font-size: 20px;
 
 }
-footer .contact img{
-    margin-right: 10px;
+
+footer .contact img {
+	margin-right: 10px;
 }
 
-.footerlogo{
-    position: absolute;
-    height: 100px;
-    width: 80px;
-    top: 320px;
-    right: 20px;
+.footerlogo {
+	position: absolute;
+	height: 100px;
+	width: 80px;
+	top: 320px;
+	right: 20px;
 
 }
+
 .footerlogo img {
-    margin: 0 auto;
-    height: 80px;
+	margin: 0 auto;
+	height: 80px;
 }
-.copy{
-    height: 20px;
-    width: auto;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
+
+.copy {
+	height: 20px;
+	width: auto;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
 }
+
 .copy svg {
-    padding-right: 10px;
-    padding-left: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-@media screen and (max-width: 1450px){
-    .content-wrapper{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .card-container{
-        max-width: 80vw;
-    }
-}
-@media screen and (max-width: 1200px){
-    .card{
-        flex-direction: column;
-        width: 580px;
-    }
-    .kontaktrubrik{
-        width: 580px;
-    }
-   .card-container{
-    flex-direction: column;
-    max-width: 90vw;
-   }
-   .project-card{
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 50px;
-   }
-}
-@media screen and (max-width: 1060px){
-   .me,.crochet{
-    max-width: 450px;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 30px;
-   }
-   .hobby-container{
-    flex-direction: column-reverse;
-   }
-   .joyful-card-container{
-    flex-direction: column;
-   }
-   .joyful-card-item{
-    margin: 0 auto;
-   }
-   .joyful-mock,.joyful-mock-2{
-    padding-top: 30px;
-    margin-top: 0px;
-   }
-   .start-text-expand p{
-    text-align: left;
-   }
-   .full-height-expand{
-    padding-bottom: 25px;
-   }
-}
-@media screen and (max-width: 800px){
-    footer .container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .container .box{
-        text-align: center;
-    }
-    .footerlogo{
-        top: 650px;
-    }
+/*inställningar för responsivitet........................................*/
 
+@media screen and (max-width: 1450px) {
+	.content-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.card-container {
+		max-width: 80vw;
+	}
 }
 
+@media screen and (max-width: 1200px) {
+	.card {
+		flex-direction: column;
+		width: 580px;
+	}
+
+	.kontaktrubrik {
+		width: 580px;
+	}
+
+	.card-container {
+		flex-direction: column;
+		max-width: 90vw;
+	}
+
+	.project-card {
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+
+	.me,
+	.crochet {
+		max-width: 450px;
+		height: auto;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+
+	.hobby-container {
+		flex-direction: column-reverse;
+	}
+
+	.joyful-card-container {
+		flex-direction: column;
+	}
+
+	.joyful-card-item {
+		margin: 0 auto;
+	}
+
+	.joyful-mock,
+	.joyful-mock-2 {
+		padding-top: 30px;
+		margin-top: 0px;
+	}
+
+	.start-text-expand p {
+		text-align: left;
+	}
+
+	.full-height-expand {
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container .box {
+		text-align: center;
+	}
+
+	.footerlogo {
+		top: 650px;
+	}
+
+}

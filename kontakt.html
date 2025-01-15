@@ -5,13 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Portfolio">
       <meta name="author" content="Felicia Edvinsson">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
       <link rel="stylesheet" href="CSS-Reset.css">
+      <link rel="stylesheet" href="style.css">
+      <!-- Typsnitt -->
+      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
+      <!-- Nedåtpil animation index -->
+      <link rel="stylesheet" href="https://lottie.host/0f401541-98c4-42aa-a922-295caa284f02/uoAU5xPSYv.lottie">
       <title>Portfolio</title>
+      <!-- Ljust läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+      <!-- Mörkt läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
    </head>
    <body onload=loadContent()>
       <div class="cursor"></div>
+      <!-- header börjar här -->
       <header class="full-height">
          <div class="headerqnt">
             <div class="bluesqr">
@@ -26,57 +34,59 @@
             <h1 class="main-title">PORTFOLIO</h1>
             <div class="bluedot"></div>
          </div>
+         <!--Navigation börjar här -->
          <nav>
             <ul>
-               <li class="hideOnMobile"><a class="hoverlink" href="index.html">HEM</a></li>
-               <li class="hideOnMobile"><a class="hoverlink" href="Projekt.html">PROJEKT</a></li>
-               <li class="hideOnMobile"><a class="hoverlink" href="om-mig.html">OM MIG</a></li>
-               <li class="hideOnMobile"><a class="current" href="kontakt.html">KONTAKT</a></li>
+               <li><a class="hoverlink" href="index.html">HEM</a></li>
+               <li><a class="hoverlink" href="Projekt.html">PROJEKT</a></li>
+               <li><a class="hoverlink" href="om-mig.html">OM MIG</a></li>
+               <li><a class="current" href="kontakt.html">KONTAKT</a></li>
             </ul>
          </nav>
+         <!--Navigation slutar här -->
+         <!--Header slutar här -->
       </header>
+      <!-- Huvudinnehåll börjar här -->
       <main>
-            <div class="contact-dark dark">
-               <h2 class="center-text color-white page-title">FYLL I FORMULÄRET, SKICKA ETT MEJL <br> ELLER FLASKPOST  –  JAG ÄR FLEXIBEL.</h2>
-               
-               <div class="contact-form">
-                  <h3 class="kontaktrubrik color-white">KONTAKTFORMULÄR</h3>
-                  <div class="container-kontakt">
-                     <form action="action_page.php">
-                        <div class="card">
-                           <div class="card-item">
-                              <label for="fname">FÖRNAMN</label>
-                              <input type="text" id="fname" name="efternamn" placeholder="Förnamn..." onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
-                              <label for="lname">EFTERNAMN</label>
-                              <input type="text" id="lname" name="efternamn" placeholder="Efternamn..." onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
-                              <label for="mail">E-POST</label>
-                              <input type="text" id="mail" name="epost" placeholder="Exempel@mail.com" onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
-                           </div>
-                           <div class="card-item">
+         <div class="contact-dark dark">
+            <h2 class="center-text color-white page-title">FYLL I FORMULÄRET, SKICKA ETT MEJL <br> ELLER FLASKPOST  –  JAG ÄR FLEXIBEL.</h2>
+            <div class="contact-form">
+               <h3 class="kontaktrubrik color-white">KONTAKTFORMULÄR</h3>
+               <div class="container-kontakt">
+                  <form action="action_page.php">
+                     <div class="card">
+                        <div class="card-item">
+                           <label for="fname">FÖRNAMN</label>
+                           <input type="text" id="fname" name="efternamn" placeholder="Förnamn..." onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
+                           <label for="lname">EFTERNAMN</label>
+                           <input type="text" id="lname" name="efternamn" placeholder="Efternamn..." onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
+                           <label for="mail">E-POST</label>
+                           <input type="text" id="mail" name="epost" placeholder="Exempel@mail.com" onmouseenter="formHover()" onmouseleave="formHoverOut()" class="setcursor">
+                        </div>
+                        <div class="card-item">
                            <label class="right" for="subject">MEDDELANDE</label>
                            <textarea class="right setcursor" id="subject" name="subject" placeholder="Tankar, idéer eller frågor? Hit med dem!" style="height:200px" onmouseenter="formHover()" onmouseleave="formHoverOut()"></textarea>
-
-                              <div class="btn non-cursor">    
-                                 <input type="submit" value="SKICKA" onmouseenter="hoverColor(),hoversize()" onmouseleave="hoverOutColor(),hoverOutsize()">
-                              </div>
+                           <div class="btn non-cursor">    
+                              <input type="submit" value="SKICKA" onmouseenter="hoverColor(),hoversize()" onmouseleave="hoverOutColor(),hoverOutsize()">
                            </div>
                         </div>
-                     </form>
-                  </div>
+                     </div>
+                  </form>
                </div>
             </div>
-
-            <div class="bottom-banner light">
-               <div class="contact-text center-text">
-                  <h3>PSST! OM FORMULÄR INTE ÄR DIN GREJ, <br>SLÄNG IVÄG ETT MEJL ISTÄLLET!</h3>
-               </div>
-               <div class="contact-mail">
-                  <img src="images/envelope-bla.svg" alt="ikon för epost, ett blått kuvert">
-                  <p>feliciaedvinsson@hotmail.com</p>
-               </div>
+         </div>
+         <div class="bottom-banner light">
+            <div class="contact-text center-text">
+               <h3>PSST! OM FORMULÄR INTE ÄR DIN GREJ, <br>SLÄNG IVÄG ETT MEJL ISTÄLLET!</h3>
             </div>
-
+            <div class="contact-mail">
+               <img src="images/envelope-bla.svg" alt="ikon för epost, ett blått kuvert">
+               <p>feliciaedvinsson@hotmail.com</p>
+            </div>
+         </div>
       </main>
+      <!-- Huvudinnehåll slutar här -->
+      <!-- Footer börjar här -->
       <footer onmouseenter="hoverColor()" onmouseleave="hoverOutColor()">
          <div class="container">
             <div class="box">
@@ -102,11 +112,18 @@
                </div>
             </div>
          </div>
-         <div class="copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
+         <!-- Copyright ikon: Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+         <div class="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+               <path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/>
+            </svg>
             <p>Designad och kodad av Felicia Edvinsson</p>
-        </div>
+         </div>
          <div class="footerlogo"><img src="images/vitlogo.png" alt="Logotype"></div>
       </footer>
-      <script src="script.js" defer></script>
+      <!-- footer slutar här -->
+      <!--Script börjar här -->
+      <script src="script.js"></script>
+      <!-- Script slutar här -->
    </body>
 </html>

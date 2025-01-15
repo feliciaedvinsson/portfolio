@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio">
-    <meta name="author" content="Felicia Edvinsson">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
-    <link rel="stylesheet" href="CSS-Reset.css">
-
-    <title>Portfolio</title>
-</head>
-<body onload=loadContent()>
-  <div class="cursor"></div>
-    <header class="full-height">
-      <div class="headerqnt">
-        <div class="bluesqr">
-          <img src="images/vitlogo.png" alt="Logotype" class="logotype">
-        </div>
-        <div class="start-text">
-          <h2 class="title-remove">FELICIA EDVINSSON</h2>
-          <p class="p-remove">Jag är en kreativ designer med fokus på grafisk <br> design och UI-design. Utforska min portfolio<br> och se hur design kan göra skillnad!</p>
-        </div>
-          </div>
-          <div class="row-content">
-          <h1 class="main-title">PORTFOLIO</h1> 
-          <div class="bluedot"></div>
-      </div>
-      <nav>
-        <ul>
-            <li class="hideOnMobile"><a class="hoverlink" href="index.html">HEM</a></li>
-            <li class="hideOnMobile"><a class="hoverlink" href="Projekt.html">PROJEKT</a></li>
-            <li class="hideOnMobile"><a class="current" href="om-mig.html">OM MIG</a></li>
-            <li class="hideOnMobile"><a class="hoverlink" href="kontakt.html">KONTAKT</a></li>
-          </ul>
-    </nav>
-    </header>
-
-
-
-    <main class="om-mig-bg">
-      <div class="maincont-index">
-         <h2 class="center-text color-white about-title">DET HÄR ÄR JAG.</h2>
-         <div class="card-container about-me">
-            <div class="about-me-card">               
-               <h2 class="color-white intro">HEJ! <br> MITT NAMN ÄR</h2>
-               <h2 class="color-blue intro-name">FELICIA <br> EDVINSSON</h2>
-               <p>Jag är en designer med en passion för UI- och grafisk design. Min tekniska kompetens omfattar flera av Adobes designverktyg, som Illustrator och XD, samt digitala ritprogram som Procreate. Dessutom har jag grundläggande kunskaper i kodning med HTML, CSS och JavaScript, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.</p>
-               <p>Förutom min tekniska bakgrund har jag erfarenheter inom service, försäljning och projektledning, vilket har hjälpt mig att utveckla starka kommunikations- och samarbetsfärdigheter. Jag tror att ett framgångsrikt projekt bygger på ett bra samarbete mellan kollegor och kunder, och jag strävar alltid efter att skapa en öppen och inkluderande dialog för att nå de bästa resultaten.</p>
-               <p>Jag studerar för närvarande en kandidatexamen i digital design vid Högskolan Kristianstad, där jag har fått möjlighet att fördjupa mig i designteori, användarcentrerade metoder och kreativa tekniker. Mitt mål är att fortsätta växa som designer och bidra till projekt.</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Portfolio">
+      <meta name="author" content="Felicia Edvinsson">
+      <link rel="stylesheet" href="CSS-Reset.css">
+      <link rel="stylesheet" href="style.css">
+      <!-- Typsnitt -->
+      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
+      <!-- Nedåtpil animation index -->
+      <link rel="stylesheet" href="https://lottie.host/0f401541-98c4-42aa-a922-295caa284f02/uoAU5xPSYv.lottie">
+      <title>Portfolio</title>
+      <!-- Ljust läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+      <!-- Mörkt läge ikon för webbplatsfönster -->
+      <link rel="icon" href="images/icons-web-dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+   </head>
+   <body onload=loadContent()>
+      <div class="cursor"></div>
+      <!-- header börjar här -->
+      <header class="full-height">
+         <div class="headerqnt">
+            <div class="bluesqr">
+               <img src="images/vitlogo.png" alt="Logotype" class="logotype">
             </div>
-            <img class="me" src="images/Jag.jpg" alt="Bild på Felicia Edvinsson">
-         </div>   
-               <div class="hobby-container"> 
-                  <img class="crochet" src="images/crochet.webp" alt="Bild på en virkad klänning med tillhörande tofflor av Felicia Edvinsson">
-                  <div class="hobby-card">
-                     <h3 class="color-blue hobby">VAD JAG GÖR FÖR SKOJSSKULL</h3>
-                     <p>När jag inte designar gillar jag att utforska nya kreativa uttryckssätt, som att lägga pussel, virka, arbeta med lera och skapa egna inredningsdetaljer. Dessa aktiviteter ger mig inte bara avkoppling utan också en möjlighet att träna min problemlösningsförmåga, noggrannhet och öga för detaljer – egenskaper som är ovärderliga i mitt arbete som designer. Jag tycker om att experimentera med form och funktion, oavsett om det handlar om digital design eller fysiska skapelser, vilket bidrar till att hålla mitt kreativa tänkande levande och mångsidigt.</p>                 
-                     <p>Jag drivs av en vilja att alltid lära mig något nytt och är redo att ta mig an utmaningar som kan hjälpa mig att utvecklas både professionellt och personligt. Tveka inte att höra av dig om du vill samarbeta, eller om du är nyfiken på att veta mer om mig och mina projekt!</p>
-                  </div>
-               </div>
-      </div>
-   </main>
-    
-
-
-    <footer onmouseenter="hoverColor()" onmouseleave="hoverOutColor()">
-      <div class="container">
-         <div class="box">
-            <h3>UPPTÄCK MER</h3>
+            <div class="start-text">
+               <h2 class="title-remove">FELICIA EDVINSSON</h2>
+               <p class="p-remove">Jag är en kreativ designer med fokus på grafisk <br> design och UI-design. Utforska min portfolio<br> och se hur design kan göra skillnad!</p>
+            </div>
+         </div>
+         <div class="row-content">
+            <h1 class="main-title">PORTFOLIO</h1>
+            <div class="bluedot"></div>
+         </div>
+         <!--Navigation börjar här -->
+         <nav>
             <ul>
-               <li ><a class="hidecrs" href="index.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">HEM</a></li>
-               <li><a class="hidecrs" href="Projekt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">PROJEKT</a></li>
-               <li><a class="hidecrs" href="om-mig.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">OM MIG</a></li>
-               <li><a class="hidecrs" href="kontakt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">KONTAKT</a></li>
+               <li><a class="hoverlink" href="index.html">HEM</a></li>
+               <li><a class="hoverlink" href="Projekt.html">PROJEKT</a></li>
+               <li><a class="current" href="om-mig.html">OM MIG</a></li>
+               <li><a class="hoverlink" href="kontakt.html">KONTAKT</a></li>
             </ul>
-         </div>
-         <div class="box">
-            <h3 class="center-text">HÄR FINNS JAG</h3>
-            <div class="socials"><img src="images/instagram-brands-solid.svg" alt="Instagram logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
-               <img src="images/linkedin-brands-solid.svg" alt="Linked in logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
+         </nav>
+         <!--Navigation slutar här -->
+         <!--Header slutar här -->
+      </header>
+      <!-- Huvudinnehåll börjar här -->
+      <main class="om-mig-bg">
+         <div class="maincont-index">
+            <h2 class="center-text color-white about-title">DET HÄR ÄR JAG.</h2>
+            <div class="card-container about-me">
+               <div class="about-me-card">
+                  <h2 class="color-white intro">HEJ! <br> MITT NAMN ÄR</h2>
+                  <h2 class="color-blue intro-name">FELICIA <br> EDVINSSON</h2>
+                  <p>Jag är en designer med en passion för UI- och grafisk design. Min tekniska kompetens omfattar flera av Adobes designverktyg, som Illustrator och XD, samt digitala ritprogram som Procreate. Dessutom har jag grundläggande kunskaper i kodning med HTML, CSS och JavaScript, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.</p>
+                  <p>Förutom min tekniska bakgrund har jag erfarenheter inom service, försäljning och projektledning, vilket har hjälpt mig att utveckla starka kommunikations- och samarbetsfärdigheter. Jag tror att ett framgångsrikt projekt bygger på ett bra samarbete mellan kollegor och kunder, och jag strävar alltid efter att skapa en öppen och inkluderande dialog för att nå de bästa resultaten.</p>
+                  <p>Jag studerar för närvarande en kandidatexamen i digital design vid Högskolan Kristianstad, där jag har fått möjlighet att fördjupa mig i designteori, användarcentrerade metoder och kreativa tekniker. Mitt mål är att fortsätta växa som designer och bidra till projekt.</p>
+               </div>
+               <img class="me" src="images/Jag.jpg" alt="Bild på Felicia Edvinsson">
+            </div>
+            <div class="hobby-container">
+               <img class="crochet" src="images/crochet.webp" alt="Bild på en virkad klänning med tillhörande tofflor av Felicia Edvinsson">
+               <div class="hobby-card">
+                  <h3 class="color-blue hobby">VAD JAG GÖR FÖR SKOJSSKULL</h3>
+                  <p>När jag inte designar gillar jag att utforska nya kreativa uttryckssätt, som att lägga pussel, virka, arbeta med lera och skapa egna inredningsdetaljer. Dessa aktiviteter ger mig inte bara avkoppling utan också en möjlighet att träna min problemlösningsförmåga, noggrannhet och öga för detaljer – egenskaper som är ovärderliga i mitt arbete som designer. Jag tycker om att experimentera med form och funktion, oavsett om det handlar om digital design eller fysiska skapelser, vilket bidrar till att hålla mitt kreativa tänkande levande och mångsidigt.</p>
+                  <p>Jag drivs av en vilja att alltid lära mig något nytt och är redo att ta mig an utmaningar som kan hjälpa mig att utvecklas både professionellt och personligt. Tveka inte att höra av dig om du vill samarbeta, eller om du är nyfiken på att veta mer om mig och mina projekt!</p>
+               </div>
             </div>
          </div>
-         <div class="box">
-            <h3 class="center-text">KONTAKTA MIG</h3>
-            <div class="contact">
-               <img src="images/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Mejl ikon">
-               <p>feliciaedvinsson@hotmail.com</p>
+      </main>
+      <!-- Huvudinnehåll slutar här -->
+      <!-- Footer börjar här -->
+      <footer onmouseenter="hoverColor()" onmouseleave="hoverOutColor()">
+         <div class="container">
+            <div class="box">
+               <h3>UPPTÄCK MER</h3>
+               <ul>
+                  <li ><a class="hidecrs" href="index.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">HEM</a></li>
+                  <li><a class="hidecrs" href="Projekt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">PROJEKT</a></li>
+                  <li><a class="hidecrs" href="om-mig.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">OM MIG</a></li>
+                  <li><a class="hidecrs" href="kontakt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">KONTAKT</a></li>
+               </ul>
+            </div>
+            <div class="box">
+               <h3 class="center-text">HÄR FINNS JAG</h3>
+               <div class="socials"><img src="images/instagram-brands-solid.svg" alt="Instagram logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
+                  <img src="images/linkedin-brands-solid.svg" alt="Linked in logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
+               </div>
+            </div>
+            <div class="box">
+               <h3 class="center-text">KONTAKTA MIG</h3>
+               <div class="contact">
+                  <img src="images/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Mejl ikon">
+                  <p>feliciaedvinsson@hotmail.com</p>
+               </div>
             </div>
          </div>
-      </div>
-      <div class="copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
-         <p>Designad och kodad av Felicia Edvinsson</p>
-     </div>
-      <div class="footerlogo"><img src="images/vitlogo.png" alt="Logotype"></div>
-   </footer>
-<script src="script.js"></script>
-</body>
-</html> 
+         <!-- Copyright ikon: Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+         <div class="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+               <path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/>
+            </svg>
+            <p>Designad och kodad av Felicia Edvinsson</p>
+         </div>
+         <div class="footerlogo"><img src="images/vitlogo.png" alt="Logotype"></div>
+      </footer>
+      <!-- footer slutar här -->
+      <!--Script börjar här -->
+      <script src="script.js"></script>
+      <!-- Script slutar här -->
+   </body>
+</html>

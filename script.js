@@ -1,3 +1,4 @@
+// funktion för att spara lokal data för att visa eller inte visa header
     function loadContent(){
         var varde = localStorage.getItem("showName")
         const content = document.querySelector('.headerqnt');
@@ -14,14 +15,17 @@
         localStorage.setItem("showName","false");
         showHead();
     };
+    
     function imageClick(url) {
         window.location = url;
     }
+// scrolla ner funktion på hemskärm svart pil
     function scrollToView() {
         const element = document.getElementById("main-content");
         element.style.scrollBehavior = "smooth";
         element.scrollIntoView();
       }
+// custom cursor
   const cursor = document.querySelector('.cursor');
   document.addEventListener('mousemove', (e)=> {
     cursor.style.left = e.pageX +'px';
@@ -57,7 +61,7 @@ function formHoverOut(){
   clrcursor.style.height = "20px";
   clrcursor.style.width = "20px";
   };
-        // funktion för vad som ska hända när man klickar på en länk i huvudmenyn
+  // funktion för att ta bort header på alla sidor utom hemskärm
     function removeHead(){
         const content = document.querySelector('.headerqnt');
         const title = document.querySelector('.title-remove');
@@ -87,6 +91,7 @@ function formHoverOut(){
 
         localStorage.setItem("showName","true");
     };
+// funktion för att visa header på hemskärm
     function showHead(){
         const content = document.querySelector('.headerqnt-expand');
         const title = document.querySelector('.title-expand');
