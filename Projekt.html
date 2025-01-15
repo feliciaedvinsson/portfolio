@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Portfolio">
+      <meta name="author" content="Felicia Edvinsson">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xsf3qxz.css">
+      <link rel="stylesheet" href="CSS-Reset.css">
+      <title>Portfolio</title>
+   </head>
+   <body onload=loadContent()>
+      <div class="cursor"></div>
+      <header class="full-height">
+         <div class="headerqnt">
+            <div class="bluesqr">
+               <img src="images/vitlogo.png" alt="Logotype" class="logotype">
+            </div>
+            <div class="start-text">
+               <h2 class="title-remove">FELICIA EDVINSSON</h2>
+               <p class="p-remove">Jag är en kreativ designer med fokus på grafisk <br> design och UI-design. Utforska min portfolio<br> och se hur design kan göra skillnad!</p>
+            </div>
+         </div>
+         <div class="row-content">
+            <h1 class="main-title">PORTFOLIO</h1>
+            <div class="bluedot"></div>
+         </div>
+         <nav>
+            <ul>
+               <li class="hideOnMobile"><a class="hoverlink" href="index.html">HEM</a></li>
+               <li class="hideOnMobile"><a class="current" href="Projekt.html">PROJEKT</a></li>
+               <li class="hideOnMobile"><a class="hoverlink" href="om-mig.html" onclick=hideHeader()>OM MIG</a></li>
+               <li class="hideOnMobile"><a class="hoverlink" href="kontakt.html" onclick=loadContent()>KONTAKT</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="dark project-dark-1">
+            <div class="content-wrapper">
+               <h3 class="page-title color-white">UI DESIGN</h3>
+               <div class="card-container">
+                  <div class="project-card">
+                     <a href="joyful.html"><img class="img-left image-hover" src="images/mockup-joyful.jpg" alt="Mobil mockup av ett projekt" onmouseenter="hoverColor(),hoversize()" onmouseleave="hoverOutColor(),hoverOutsize()"></a>
+                     <div class="card-text">
+                        <h2 class="number color-white">01</h2>
+                        <div class="card-desc">
+                           <h3 class="color-white">JOYFUL</h3>
+                           <p class="color-white">Detta projekt är en prototyp med målet att hjälpa användare att minska sin skärmtid.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-card">
+                     <img class="img-right" src="images/mockup-kulturkomp.jpg" alt="Mobil mockup av ett projekt">
+                     <div class="card-text">
+                        <h2 class="number color-white">02</h2>
+                        <div class="card-desc">
+                           <h3 class="color-white">KULTURKOMPASSEN</h3>
+                           <p class="color-white">Detta projekt är en prototyp av en applikation som främjar kulturminnen i Sverige.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="light project-light">
+            <div class="content-wrapper">
+               <h3 class="card-title color-black">GRAFISK DESIGN</h3>
+               <div class="card-container">
+                  <div class="project-card">
+                     <img class="img-left" src="images/pattern.webp" alt="Ett designat mönster">
+                     <div class="card-text">
+                        <h2 class="number color-black">01</h2>
+                        <div class="card-desc">
+                           <h3 class="color-black">MÖNSTER</h3>
+                           <p class="color-black">Detta projekt var del av en grafisk profil för ett fiktivt företag som sålde sötsaker.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-card">
+                     <img class="img-right" src="images/visitkort-rosa.jpg" alt="Mockup av ett visitkort">
+                     <div class="card-text">
+                        <h2 class="number black">02</h2>
+                        <div class="card-desc">
+                           <h3 class="color-black">VISITKORT</h3>
+                           <p class="color-black">Detta projekt är ett visitkort framtaget till mig själv som designer.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-container">
+                  <div class="project-card">
+                     <img class="img-left" src="images/visitkort-svartvit.jpg" alt="Mockup av ett visitkort">
+                     <div class="card-text">
+                        <h2 class="number color-black">03</h2>
+                        <div class="card-desc">
+                           <h3 class="color-black">VISITKORT</h3>
+                           <p class="color-black">Detta projekt är ett visitkort framtaget till mig själv som designer.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-card">
+                     <img class="img-right" src="images/desguide.jpg" alt="Mockup av en poster med ett motiv av en designguide">
+                     <div class="card-text">
+                        <h2 class="number black">04</h2>
+                        <div class="card-desc">
+                           <h3 class="color-black">POSTER</h3>
+                           <p class="color-black">Detta projekt är en poster med motivet av en designguide.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dark project-dark-2">
+            <div class="content-wrapper">
+               <h3 class="card-title color-white">ILLUSTRATIONER</h3>
+               <div class="card-container">
+                  <div class="project-card">
+                     <img class="img-left" src="images/anders.webp" alt="En illustration av en äldre man">
+                     <div class="card-text">
+                        <h2 class="number color-white">01</h2>
+                        <div class="card-desc">
+                           <h3 class="color-white">PERSONA</h3>
+                           <p class="color-white">Detta projekt är en persona som sapades inför ett forskningsarbete. (Skapad i Procreate)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="project-card">
+                     <img class="img-right" src="images/giro.webp" alt="En illustration av en tjej">
+                     <div class="card-text">
+                        <h2 class="number color-white">02</h2>
+                        <div class="card-desc">
+                           <h3 class="color-white">TECKNAD FIGUR</h3>
+                           <p class="color-white">Detta projekt är skapat på fritiden för nöjesskull. <br> (Skapad i Procreate)</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="card-container">
+               <div class="project-card">
+                  <img class="img-left" src="images/portrait.webp" alt="En illustration av ett självporträtt">
+                  <div class="card-text">
+                     <h2 class="number color-white">03</h2>
+                     <div class="card-desc">
+                        <h3 class="color-white">SJÄLVPORTRÄTT</h3>
+                        <p class="color-white">Detta projekt är ett självporträtt. (Skapad i Adobe Illustrator)</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <img class="img-right" src="images/chark.webp" alt="En illustration av en charkbricka med ett vinglas">
+                  <div class="card-text">
+                     <h2 class="number color-white">04</h2>
+                     <div class="card-desc">
+                        <h3 class="color-white">CHARKBRICKA</h3>
+                        <p class="color-white">Detta projekt är en illustration av en charkbricka.  (Skapad i Adobe Illustrator)</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer onmouseenter="hoverColor()" onmouseleave="hoverOutColor()">
+         <div class="container">
+            <div class="box">
+               <h3>UPPTÄCK MER</h3>
+               <ul>
+                  <li ><a class="hidecrs" href="index.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">HEM</a></li>
+                  <li><a class="hidecrs" href="Projekt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">PROJEKT</a></li>
+                  <li><a class="hidecrs" href="om-mig.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">OM MIG</a></li>
+                  <li><a class="hidecrs" href="kontakt.html" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">KONTAKT</a></li>
+               </ul>
+            </div>
+            <div class="box">
+               <h3 class="center-text">HÄR FINNS JAG</h3>
+               <div class="socials"><img src="images/instagram-brands-solid.svg" alt="Instagram logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
+                  <img src="images/linkedin-brands-solid.svg" alt="Linked in logotyp" onmouseenter="hoversize()" onmouseleave="hoverOutsize()">
+               </div>
+            </div>
+            <div class="box">
+               <h3 class="center-text">KONTAKTA MIG</h3>
+               <div class="contact">
+                  <img src="images/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Mejl ikon">
+                  <p>feliciaedvinsson@hotmail.com</p>
+               </div>
+            </div>
+         </div>
+         <div class="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+               <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+               <path fill="#ffffff" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/>
+            </svg>
+            <p>Designad och kodad av Felicia Edvinsson</p>
+         </div>
+         <div class="footerlogo"><img src="images/vitlogo.png" alt="Logotype"></div>
+      </footer>
+      <script src="script.js" defer></script>
+   </body>
+</html>
